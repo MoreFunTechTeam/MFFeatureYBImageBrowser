@@ -19,34 +19,34 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/MoreFunTechTeam/MFFeatureYBImageBrowser.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/MoreFunTechTeam/MFYBImageBrowserFeature.git", :tag => "#{s.version}" }
 
   s.requires_arc = true
 
   s.default_subspec = "Core"
 
   s.subspec "Core" do |core|
-    core.source_files   = "YBImageBrowser/**/*.{h,m}"
-    core.resources      = "YBImageBrowser/YBImageBrowser.bundle"
+    core.source_files   = "MFYBImageBrowserFeature/**/*.{h,m}"
+    core.resources      = "MFYBImageBrowserFeature/YBImageBrowser.bundle"
     core.dependency 'YYImage'
     core.dependency 'SDWebImage', '>= 5.0.0'
   end
   s.subspec "NOSD" do |core|
-    core.source_files   = "YBImageBrowser/**/*.{h,m}"
-    core.exclude_files  = "YBImageBrowser/WebImageMediator/YBIBDefaultWebImageMediator.{h,m}"
-    core.resources      = "YBImageBrowser/YBImageBrowser.bundle"
+    core.source_files   = "MFYBImageBrowserFeature/**/*.{h,m}"
+    core.exclude_files  = "MFYBImageBrowserFeature/WebImageMediator/YBIBDefaultWebImageMediator.{h,m}"
+    core.resources      = "MFYBImageBrowserFeature/YBImageBrowser.bundle"
     core.dependency 'YYImage'
   end
 
   s.subspec "Video" do |video|
     video.source_files = "Video/*.{h,m}"
     video.resources    = "Video/YBImageBrowserVideo.bundle"
-    video.dependency 'YBImageBrowser/Core'
+    video.dependency 'MFYBImageBrowserFeature/Core'
   end
   s.subspec "VideoNOSD" do |video|
     video.source_files = "Video/*.{h,m}"
     video.resources    = "Video/YBImageBrowserVideo.bundle"
-    video.dependency 'YBImageBrowser/NOSD'
+    video.dependency 'MFYBImageBrowserFeature/NOSD'
   end
 
 end
