@@ -1,0 +1,22 @@
+{
+  "name": "MFYBImageBrowserFeature",
+  "version": "0.1.0",
+  "summary": "A short description of MFYBImageBrowserFeature.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kevin930119/MFYBImageBrowserFeature",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kevin930119": "673729631@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/kevin930119/MFYBImageBrowserFeature.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "MFYBImageBrowserFeature/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module MFYBImageBrowserFeature {
+  umbrella header "MFYBImageBrowserFeature-umbrella.h"
+
+  export *
+  module * { export * }
+}
